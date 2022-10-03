@@ -30,3 +30,14 @@ body {
   padding: 0;
   border: 0;
 }
+
+a {
+  color: white;
+  text-decoration-thickness: auto;
+  transition: text-decoration-thickness 0.2s ease-in, color 0.2s ease-in;
+}
+
+a:hover {
+  color: hsl(180deg, 25%, 92%);
+  text-decoration-thickness: 0.1em;
+}

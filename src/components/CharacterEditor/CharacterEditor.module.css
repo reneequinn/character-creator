@@ -1,12 +1,15 @@
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
+  overflow-x: hidden;
 }
 
 .maxWidthWrapper {
+  position: relative;
 }
 
 .header {
+  max-width: 65%;
   padding-bottom: 64px;
 }
 
@@ -24,7 +27,34 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 128px;
+  min-height: 500px;
+  top: 10%;
+  left: 65%;
+  bottom: 10%;
 }
 
 .controlColumn {
+  z-index: 1;
+  max-width: 50%;
+
+  margin-left: -32px;
+  margin-right: -32px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.controlColumn > * {
+  width: calc(100%);
+}
+
+.perspectiveDecoration {
+  position: fixed;
+  background-color: hsl(195deg, 20%, 86%);
+  width: 100%;
+  height: 40%;
+  top: 60%;
 }

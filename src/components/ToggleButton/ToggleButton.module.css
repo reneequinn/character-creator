@@ -21,3 +21,7 @@
   color: white;
   border-width: 6px;
 }
+
+.toggleButton:last-of-type {
+  margin-right: 24px;
+}
